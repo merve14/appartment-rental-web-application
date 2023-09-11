@@ -1,0 +1,53 @@
+@import "../breakpoints.scss";
+$fontweight500: 500;
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1.h1 {
+    color: #ff6060;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    margin: 35px;
+
+    @include media("<=phone") {
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 96px;
+      font-style: normal;
+      font-weight: 700;
+      margin: 113px 88px;
+    }
+  }
+  p.text {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    text-align: center;
+    font-weight: $fontweight500;
+    margin-bottom: 85px;
+
+    @include media("<=phone") {
+      font-size: 18px;
+      margin-bottom: 113px;
+    }
+  }
+  a.homepage {
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: $fontweight500;
+    text-decoration-line: underline;
+    margin-bottom: 82px;
+
+    @include media("<=phone") {
+      font-size: 14px;
+      margin-bottom: 113px;
+    }
+  }
+}

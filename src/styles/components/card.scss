@@ -1,0 +1,87 @@
+@import "../breakpoints.scss";
+
+$card-color: #fff;
+
+.housting-container {
+  width: 82%;
+  margin: auto;
+  margin-top: 56px;
+  border-radius: 25px;
+  background: #f6f6f6;
+
+  @media (max-width: 375px) {
+    width: 100%;
+    margin-top: 22px;
+    background: none;
+  }
+
+  ul {
+    height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 60px;
+
+    @media (max-width: 375px) {
+      display: block;
+      padding: 0;
+      margin-top: 22px;
+      margin-bottom: 27px;
+      margin: 22px 20px 27px 20px;
+    }
+
+    li.card {
+      position: relative;
+      border-radius: 10px;
+      color: $card-color;
+      overflow: hidden;
+
+      @media (max-width: 375px) {
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+        z-index: 1; /* Place the gradient overlay behind the text */
+        pointer-events: none;
+
+        @media (max-width: 375px) {
+          top: -3px;
+        }
+      }
+
+      img.cover-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+h3.card-title {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  margin: 0 12px 20px 8px;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  color: $card-color;
+  z-index: 2;
+}

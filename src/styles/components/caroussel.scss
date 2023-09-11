@@ -1,0 +1,79 @@
+@import "../breakpoints.scss";
+
+$color: #fff;
+
+.carousel {
+  width: 87%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include media("<=phone") {
+    height: 255px;
+    border-radius: 10px;
+    margin-top: 27px;
+  }
+
+  /* Slide image */
+  .slide {
+    width: 100%;
+    height: 415px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  /* Arrow buttons */
+  .arrow {
+    width: 46px;
+    height: 79px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: $color;
+    transition: 0.3s ease-in-out;
+
+    @include media("<=phone") {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  /* Arrow icons */
+  .arrow img {
+    width: 20px;
+    height: 20px;
+  }
+  /* Positioning of arrow buttons */
+  .left {
+    left: 10px;
+  }
+
+  .right {
+    right: 10px;
+  }
+}
+//text currentSlide/pictures.length
+.slide-info {
+  position: absolute;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 19px;
+  font-weight: 500;
+  color: $color;
+
+  @include media("<=phone") {
+    display: none;
+  }
+  span.slide-position {
+    position: relative;
+    top: 175px;
+    left: 620px;
+  }
+}
