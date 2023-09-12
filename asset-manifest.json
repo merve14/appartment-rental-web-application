@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/appartment-rental-web-application/static/css/main.627d8b4a.css",
-    "main.js": "/appartment-rental-web-application/static/js/main.70b91c4b.js",
+    "main.css": "/appartment-rental-web-application/static/css/main.f1d6800c.css",
+    "main.js": "/appartment-rental-web-application/static/js/main.844eaeaa.js",
     "static/media/banner-about-page.png": "/appartment-rental-web-application/static/media/banner-about-page.59eff0b9c0a4f903ec73.png",
     "static/media/Banner.png": "/appartment-rental-web-application/static/media/Banner.a5ee757294d759207123.png",
     "index.html": "/appartment-rental-web-application/index.html",
     "static/media/rightArrow.svg": "/appartment-rental-web-application/static/media/rightArrow.dfebbffec6d3865e8655ca0c81ffd33c.svg",
     "static/media/leftArrow.svg": "/appartment-rental-web-application/static/media/leftArrow.f3f0bb2c041648c34b954a31fd36c006.svg",
-    "main.627d8b4a.css.map": "/appartment-rental-web-application/static/css/main.627d8b4a.css.map",
-    "main.70b91c4b.js.map": "/appartment-rental-web-application/static/js/main.70b91c4b.js.map"
+    "main.f1d6800c.css.map": "/appartment-rental-web-application/static/css/main.f1d6800c.css.map",
+    "main.844eaeaa.js.map": "/appartment-rental-web-application/static/js/main.844eaeaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.627d8b4a.css",
-    "static/js/main.70b91c4b.js"
+    "static/css/main.f1d6800c.css",
+    "static/js/main.844eaeaa.js"
   ]
 }
