@@ -7,9 +7,9 @@ import Housing from "./pages/Housing.js";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
         <Route path="/housing/:id" element={<Housing />} />
