@@ -131,6 +131,7 @@ $info-seller-desktop-font-size: 18px;
       .star-icon {
         height: 25px;
         padding-bottom: 5px;
+        padding-right: 5px;
 
         @include media("<=phone") {
           height: 14px;

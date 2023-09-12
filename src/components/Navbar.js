@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import logo from "../styles/assets/LOGO.png";
 
 const Nav = () => {
   const location = useLocation();
   return (
     <div className="navigation">
       <NavLink to="/">
-        <img className="logo-image" src="../LOGO.png" alt="Logo.png" />
+        <img className="logo-image" src={logo} alt="Logo.png" />
       </NavLink>
       <ul>
         <li>

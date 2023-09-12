@@ -10,7 +10,7 @@ const About = () => {
     <div>
       <Nav />
       <Banner image={bannerAbout} />
-      <div className="accordion">
+      <div className="accordion-about-page">
         <Collapses
           title="Fiabilité"
           text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
