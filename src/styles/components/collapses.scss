@@ -7,9 +7,7 @@ $themeColor: #ff6060;
   width: 85%;
 
   @include media("<=phone") {
-    width: 94%;
-    margin-top: 19px;
-    margin-bottom: 19px;
+    margin-top: 20px;
   }
 
   .accordion-visible {
@@ -94,6 +92,11 @@ $themeColor: #ff6060;
   align-items: flex-end;
   flex-direction: column;
   margin-left: 18px;
+
+  @include media("<=phone") {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .housing-page-accordion {
@@ -103,9 +106,11 @@ $themeColor: #ff6060;
   gap: 70px;
 
   @include media("<=phone") {
-    display: block;
     width: 100%;
+    display: block;
+    padding: 0;
     margin: 0;
     margin-bottom: 27px;
+    margin-left: 25px;
   }
 }
