@@ -1,1 +1,2 @@
 Kasa has been in the business of renting apartments between individuals for almost 10 years now. With more than 500 advertisements posted every day, Kasa is one of the leaders in the rental of apartments between individuals in France. The site was coded 10 years ago in ASP.NET with significant legacy code. Time to Start the React project and develop the whole application, React components, React Router, following Figma mockups (with responsive!).
+Project 8 OPC
